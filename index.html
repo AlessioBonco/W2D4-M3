@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body id="bd">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="stickynav">
+        <div class="container-fluid">
+          <a class="navbar-brand"  id="logo"> <i class="fa-solid fa-plane"></i> Flex'Go-Travels </i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar" >
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#jumbotron"> <i class="fa-solid fa-house"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#OffSett"> <i class="fa-solid fa-dollar-sign"></i> Offerta della settimana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#WelSummer"> <i class="fa-solid fa-sun"></i> Welcome Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#OffGiorno"> <i class="fa-solid fa-dollar-sign"></i> Offerta Del Giorno</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#LastMinute"> <i class="fa-solid fa-clock"></i> Last Minute</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Testimonial"> <i class="fa-solid fa-user"></i> Testimonial</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner" id="carusel">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="assets/maldive.jpg" alt="Los Angeles" class="d-block w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="assets/bali.jpg" alt="Chicago" class="d-block w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="assets/dubai.webp" alt="New York" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+    <div id="paroleContainer">
+        <div id="paroleUp">
+            <div class="paroline">
+              | <i class="fa-solid fa-earth-americas"></i> VOLO + HOTEL | 
+            </div>
+            <div  class="paroline">
+              |  <i class="fa-solid fa-plane"></i>  VOLI |
+            </div>
+            <div  class="paroline">
+               | <i class="fa-solid fa-hotel"></i> HOTEL |
+            </div>
+            <div  class="paroline">
+               | <i class="fa-solid fa-dollar-sign"></i> TROVA OFFERTE |
+            </div>
+            <div  class="paroline">
+               | <i class="fa-solid fa-sun"></i>  METE ESTIVE  |
+            </div>
+            <div  class="paroline"> 
+               | <i class="fa-solid fa-mountain"></i> METE INVERNALI |
+            </div>
+        </div>
+        <hr>
+        <div id="inDiv">
+            <div>
+              <input type="text" placeholder="Partenza 📍">
+            </div>
+            <div>
+             <input type="text" placeholder="Destinazione 🌎">
+            </div>
+            <div class="date">
+             <input type="date">
+            </div>
+            <div>
+             <input type="text" placeholder="Camere o Passeggeri 👤">
+            </div>
+            <div>
+                <button> Cerca</button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-transparent" id="nav2">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Viaggi |</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="#">Voli</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hotel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">NordAfrica</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">NordAmerica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">SudAfrica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">SudAmerica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Austrlia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Europa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Asia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Isole</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Montagna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Laghi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"></a>
+         
+
+      </ul>
+    </div>
+  </nav>
+      <button class="btn1" onclick="MostraNascondi ()">Nascondi/Mostra</button>
+      <section id="jumbotron">
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>Flex'Go-Travels</h1>
+            <p>Il compagno giusto da portati sempre in viaggio...</p>
+            <hr>
+            <p style="margin-top: 40px;">PRENOTA QUI :</p>
+            <button class="btn2">PRENOTA</button>
+          </div>
+      </section>
+      <button class="btn1" onclick="rimuoviTutteLeCard ()">RImuovi card</button>
+      <button class="btn1" onclick="MostraNascondi2 ()">Nascondi/Mostra</button>
+      <section id="OffSett">
+        <h1>Offerta Della Settimana</h1>
+        <h6 id="subtitle">| Trova le miglior offerte Volo + Hotel |</h6>
+        <hr class="hr1">
+        <div class="container" id="container-cards">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4" ">
+                <div class="card" style="width: 100%;" id="cards"  >
+                  <img class="card-img-top" src="assets/santa monica.jpg" alt="Card image">
+                  <div class="card-body">
+                    <h4 class="card-title">Los Angeles</h4>
+                    <p class="card-text">Voli da Milano/roma <br>7/8 Notti <br>Partenza 12 Nov. 2024 <br> Volo + Hotel <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-solid fa-star-half-stroke"></i></i></p>
+                    <hr>
+                    <div id="price">
+                        <div>
+                        <h4 >540€ </h4>
+                       </div>
+                       <div>
+                        <i class="fa-solid fa-plane"> </i> <i class="fa-solid fa-hotel"></i>
+                       </div>
+                   </div>
+                    <a href="#" class="btn btn-primary">PRENOTA</a>
+               
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;" id="cards">
+                    <img class="card-img-top" src="assets/ny.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">New York</h4>
+                      <p class="card-text">Voli Da Milano <br>5 Notti <br>Partenza 15 Nov. 2024 <br> Volo + Hotel <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                      <hr>
+                      <div id="price">
+                        <div>
+                        <h4 >720€ </h4>
+                       </div>
+                       <div>
+                        <i class="fa-solid fa-plane"> </i> <i class="fa-solid fa-hotel"></i>
+                       </div>
+                   </div>
+                      <a href="#" class="btn btn-primary">PRENOTA</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;" id="cards">
+                    <img class="card-img-top" src="assets/dubai.webp" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Dubai</h4>
+                      <p class="card-text">Voli Da Milano/Roma <br>9 Notti <br>Partenza 8 Nov. 2024 <br>Volo + Hotel  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                      <hr>
+                      <div id="price">
+                        <div>
+                        <h4 >645€ </h4>
+                       </div>
+                       <div>
+                        <i class="fa-solid fa-plane"> </i> <i class="fa-solid fa-hotel"></i>
+                       </div>
+                   </div>
+                      <a href="#" class="btn btn-primary">PRENOTA</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;" id="cards">
+                    <img class="card-img-top" src="assets/bali.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bali</h4>
+                      <p class="card-text">Voli Da Milano/Roma <br>6/7 Notti <br>Partenza 18 Nov. 2024 <br>Volo + Hotel <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                      <hr>
+                      <div id="price">
+                        <div>
+                        <h4 >840€ </h4>
+                       </div>
+                       <div>
+                        <i class="fa-solid fa-plane"> </i> <i class="fa-solid fa-hotel"></i>
+                       </div>
+                   </div>
+                      <a href="#" class="btn btn-primary">PRENOTA</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <button class="btn1" onclick="MostraNascondi3 ()">Nascondi/Mostra</button>
+      <section id="WelSummer">
+        <h1>Welcome Summer</h1>
+        <h6 id="subtitle">| Perfetti per l'estate |</h6>
+        <hr class="hr1">
+        <div class="container" >
+            <div class="row">
+              <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;" id="cards" >
+                  <img class="card-img-top" src="assets/ibiza.webp" alt="Card image">
+                  <div class="card-body">
+                    <h4 class="card-title">Ibiza</h4>
+                    <p>Voli da Milano/Roma</p>
+                    <div id="price2">
+                        <div>
+                         <p class="card-text"> A partire da <b>:</b> </p>
+                        </div>
+                        <div>
+                         <h4>95€</h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="#" class="btn btn-primary" style="margin-left: 12PX;">SCOPRI DI PIU'</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;" id="cards">
+                    <img class="card-img-top" src="assets/maldive.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Maldive</h4>
+                        <p>Voli da Milano</p>
+                        <div id="price2">
+                            <div>
+                             <p class="card-text"> A partire da <b>:</b> </p>
+                            </div>
+                            <div>
+                             <h4>110€</h4>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#" class="btn btn-primary" style="margin-left: 12PX;">SCOPRI DI PIU'</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;" id="cards">
+                    <img class="card-img-top" src="assets/barca.jpeg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Barcellona</h4>
+                        <p>Voli da Perugia/Roma</p>
+                        <div id="price2">
+                            <div>
+                             <p class="card-text"> A partire da <b>:</b> </p>
+                            </div>
+                            <div>
+                             <h4>50€</h4>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#" class="btn btn-primary" style="margin-left: 12PX;">SCOPRI DI PIU'</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;" id="cards">
+                    <img class="card-img-top" src="assets/zante.jpeg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Zante</h4>
+                        <p>Voli da Milano/Roma</p>
+                        <div id="price2">
+                            <div>
+                             <p class="card-text"> A partire da <b>:</b> </p>
+                            </div>
+                            <div>
+                             <h4>75€</h4>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#" class="btn btn-primary" style="margin-left: 12PX;">SCOPRI DI PIU'</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;" id="cards">
+                    <img class="card-img-top" src="assets/corfu.webp" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Corfu</h4>
+                        <p>Voli da Roma</p>
+                        <div id="price2">
+                            <div>
+                             <p class="card-text"> A partire da <b>:</b> </p>
+                            </div>
+                            <div>
+                             <h4>86€</h4>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#" class="btn btn-primary" style="margin-left: 12PX;">SCOPRI DI PIU'</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;" id="cards">
+                    <img class="card-img-top" src="assets/mykonos2.jpeg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Mykonos</h4>
+                        <p>Voli da Milano/Roma</p>
+                        <div id="price2">
+                            <div>
+                             <p class="card-text"> A partire da <b>:</b> </p>
+                            </div>
+                            <div>
+                             <h4>119€</h4>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#" class="btn btn-primary" style="margin-left: 12PX;">SCOPRI DI PIU'</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="OffGiorno">
+        <h1>Offerta Del Giorno</h1>
+        <hr id="hr3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-12"> 
+                    <img src="assets/bora broa.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-md-4 col-12"> 
+                    <h1>Bora Bora</h1>
+                    <P>Dal 9 Nov. al 15 Nov. 2024</P>
+                    <p>UUn laguna di incomparabile bellezza. Scoprite la gloriosa isola paradisiaca di Bora Bora nella Polinesia Francese. Una destinazione da sogno famosa per la sua laguna turchese con le sue splendie spiagge di sabbia bianca che la rendono il luogo perfetto per gli sport acquatici, per rilassarsi e per una vacanza romantica.</p>
+                    <hr>
+                    <h2>OFFERTA!!! </h2>
+                    <h3>500,00€</h3>
+              <button class="btn3">PRENOTA SUBITO</button>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="LastMinute">
+      <h1>Last Minute</h1>
+      <hr id="hr4">
+      <div id="fotoLast">
+        <div>
+            <img src="assets/thailandia.jpeg" alt="">
+        </div>
+        <div>
+            <img src="assets/instanbul.jpeg" alt="">
+        </div>
+        <div>
+            <img src="assets/mosca.jpg" alt="">
+        </div>
+        <div>
+            <img src="assets/milano.jpg" alt="">
+        </div>
+        <div>
+            <img src="assets/bucarest.jpeg" alt="">
+        </div>
+        <div>
+            <img src="assets/praga.jpeg" alt="">
+        </div>
+      </div>
+      </section>
+        <section class="container my-5" id="Testimonial">
+            <h1>Cosa dicono i nostri viaggiatori</h1>
+            <hr id="hr5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">"Esperienza indimenticabile! Le spiagge erano incredibili e tutto era organizzato alla perfezione. Tornerò sicuramente!"</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center">
+                            <img src="assets/user1.png" alt="User 1" class="rounded-circle mr-3" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0">Mario Rossi <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></h6>
+                                <small class="text-muted">Visitato Bora Bora</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">"Il servizio clienti è stato fantastico, e ho trovato l'hotel perfetto. Grazie a questo sito, la mia vacanza è stata perfetta!"</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center">
+                            <img src="assets/user2.jpg" alt="User 2" class="rounded-circle mr-3" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0">Laura Bianchi <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
+                                <small class="text-muted">Visitato Maldive</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">"Sito super utile! Ho trovato offerte speciali e ho scoperto posti che non conoscevo. Consigliatissimo!"</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center">
+                            <img src="assets/user3.jpg" alt="User 3" class="rounded-circle mr-3" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0">Giulia Verdi <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h6>
+                                <small class="text-muted">Visitato Thailandia</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="iscriviti">
+                <div>
+                    Per qualsiasi informazione :
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                       Contattaci
+                    </button>
+                    
+                    <!-- Modale -->
+                    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="contactModalLabel">Contattaci</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Messaggio</label>
+                                            <textarea class="form-control" id="message" rows="4" placeholder="Scrivi il tuo messaggio qui" required></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                    <button type="button" class="btn btn-primary">Invia Messaggio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div style="font-size: 0.5cm;">
+                @flexgotravels | www.flexgotravels.com
+                
+            </div>
+        </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src= "https:/kit.fontawesome.com/2a73860ace.js"crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
